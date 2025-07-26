@@ -35,8 +35,8 @@ function App() {
         setOrder((prev)=> {
           const newOrder = prev.slice()
           newOrder.pop()
-          return newOrder;
-        })
+          // return newOrder;
+       
 
         if(newOrder.length ===0)
         {
@@ -44,7 +44,8 @@ function App() {
           // setIsDeactivating(false)
 
         }
-        // return newOrder;
+        return newOrder;
+         })
 
       },300)
 
